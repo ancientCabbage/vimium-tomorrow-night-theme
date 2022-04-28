@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
 :root {
    --vim-background: #1d1f21;
     --vim-current-line: #282a2e;
@@ -14,7 +11,6 @@
     --vim-aqua: #8abeb7;
     --vim-blue: #81a2be;
     --vim-purple: #b294bb;
-
 }
 
 iframe.vimiumHUDFrame.vimiumUIComponentVisible
@@ -41,23 +37,31 @@ input#vomnibarInput.vimiumReset {
 }
 
 #vomnibar {
-   border-color: var(--vim-background);
+   border-style: hidden;
    background-color: black;
+   padding: 0;
 }
 
 #vomnibar .vimiumReset.vomnibarTopHalf span {
-    font-family: 'Montserrat', sans-serif !important;
     font-weight: 800;
 }
 
 #vomnibar .vomnibarSearchArea {
    background-color: var(--vim-background);
    border-bottom: var(--vim-background);
-   padding: 0 0 0 1em;
+   padding: 0;
 }
 
 #vomnibar input {
    border-color: var(--vim-background);
+   background-color: var(--vim-current-line);
+   color: var(--vim-foreground);
+   padding-left: 7px;
+}
+
+#vomnibar ul {
+   background-color: var(--vim-selection);
+   margin: 0;
 }
 
 #vomnibar ul.vimiumReset {
@@ -110,4 +114,24 @@ div > .vimiumHintMarker span {
     border: 0 none !important;
     border-radius: 0 !important;
     padding: 1em;
+}
+
+#vimiumHelpDialogContainer {
+   background-color: var(--vim-background) !important;
+}
+
+#vimiumHelpDialogContainer a {
+   color: var(--vim-red);
+}
+
+div.vimiumColumn td{
+   color: var(--vim-foreground);
+}
+
+div.vimiumColumn{
+   color: var(--vim-foreground);
+}
+
+#vimiumTitle{
+   color: var(--vim-foreground);
 }
