@@ -1,3 +1,4 @@
+
 :root {
    --vim-background: #1d1f21;
     --vim-current-line: #282a2e;
@@ -104,16 +105,15 @@ span.vimiumReset.vomnibarSource.vomnibarInsertText {
     color: var(--vim-comment);
 }
 
-div > .vimiumHintMarker span {
+div > .internalVimiumHintMarker.vimiumHintMarker span {
     background-color: var(--vim-background);
-    color: var(--vim-foreground) !important;
+    color: var(--vim-foreground);
 }
 
 .vimiumReset.internalVimiumHintMarker.vimiumHintMarker {
     background: var(--vim-background) !important;
-    border: 0 none !important;
-    border-radius: 0 !important;
-    padding: 1em;
+    border: solid 1px var(--vim-foreground) !important;
+    padding: 1px;
 }
 
 #vimiumHelpDialogContainer {
@@ -134,4 +134,12 @@ div.vimiumColumn{
 
 #vimiumTitle{
    color: var(--vim-foreground);
+}
+
+.vimiumHintMarker > .vimiumReset.matchingCharacter{
+   color: var(--vim-orange);
+}
+
+.vimiumHintMarker{
+   padding: 0;
 }
